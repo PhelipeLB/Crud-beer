@@ -1,73 +1,43 @@
-# Turborepo starter
+## CRUD Beer
+![BEER DEV](https://user-images.githubusercontent.com/19939822/213870554-7d4b8520-cc64-4379-a23f-93a50fcc1f9b.png)
 
-This is an official Yarn v1 starter turborepo.
+CRUD Beer is an open source project carried out by me @PhelipeLB with mentorship from @daniloab.
 
-## What's inside?
+The project is opensource for those who want to learn how to code a real project into a routine with:
+- discussion
+- prototyping
+- architecture
+- drawing
+- code
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/) as a package manager. It includes the following packages/apps:
+## How it works
+The project is defined by GitHub's own issues. Each issue will have a purpose and sub issues for the same.
 
-### Apps and Packages
+Each person should always be on a different issue to avoid conflicts when coding.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## How to contribute
+To contribute the steps are simple:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Discord
+To make it easier, you can request access to the @daniloab discord and access the specific channel for the project.
 
-### Utilities
+Open an issue on the repository asking for access to it. We do not have public access due to bots.
 
-This turborepo has some additional tools already setup for you:
+### Issues
+When entering the discord you will be introduced to the project routine. You will understand the purposes of the issues and be able to identify one that makes sense to you and start developing it.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+### Contributing
+To contribute, you will always need to follow these steps:
+- code your solution
+- create a new branch following commitlint standards
+- commit on branch following commitlint standards.
+- go up and open a new pull request for the team to review
 
-### Build
+#### Contributing as part of the team
+If you want to contribute by being part of the team, do the steps above and request the same via discord. Afterwards, just clone the project and contribute.
 
-To build all apps and packages, run the following command:
+#### Contribution via fork
+If you don't want to follow the steps above you can fork the project and contribute like any other opensource project.
 
-```
-cd my-turborepo
-yarn run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-yarn run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+### Doubts
+Any questions can be addressed via issue or directly on the discord channel

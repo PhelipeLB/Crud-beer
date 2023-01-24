@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "@crud-beer/server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "description": "crud beer nodejs server",
   "scripts": {
     "dev": "tsx watch index.ts"

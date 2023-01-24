@@ -1,5 +1,5 @@
 {
-  "name": "main",
+  "name": "@crud-beer/main",
   "version": "0.1.0",
   "private": true,
   "scripts": {

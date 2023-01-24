@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "crud beer nodejs server",
+  "scripts": {
+    "dev": "tsx watch index.ts"
+  },
+  "repository": {
+    "url": "https://github.com/PhelipeLB/Crud-beer.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "koa": "^2.14.1"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.2"
+  }
+}

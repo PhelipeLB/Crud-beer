@@ -18,18 +18,13 @@ app.use(cors())
 
 export default app.use(async ctx => {
 
-  const request = {
-    body: ctx.request.body,
-    headers: ctx.request.headers,
-    method: ctx.request.method,
-    query: ctx.request.query,
-  };
+  const { request } = ctx;
 
   if (shouldRenderGraphiQL(request)) {
     ctx.body = renderGraphiQL({});
-  } else {
+    return;
+  } 
     const { operationName, query, variables } = getGraphQLParameters(request);
-
     const result = await processRequest({
       operationName,
       query,
@@ -38,5 +33,4 @@ export default app.use(async ctx => {
       schema,
     });
     sendResult(result, ctx.res);
-  }
 });

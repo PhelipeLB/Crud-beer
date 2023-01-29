@@ -5,7 +5,7 @@ import { Center, Square, Circle } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Flex
-      bg="gray.300"
+      bg="primary.100"
       maxW="100%"
       minHeight="100vh"
       justifyContent={"center"}

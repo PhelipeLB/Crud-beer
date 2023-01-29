@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
+const withTM = require("next-transpile-modules")(["@crud-beer/ui"], {
+  resolveSymlinks: true,
+});
+
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig);

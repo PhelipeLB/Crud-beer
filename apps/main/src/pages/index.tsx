@@ -1,27 +1,10 @@
-import { Container } from "@chakra-ui/react";
-import { Flex } from "@chakra-ui/react";
-import { Center, Square, Circle } from "@chakra-ui/react";
+import { Container } from "@crud-beer/ui";
+import { Navbar } from "@crud-beer/ui";
 
 export default function Home() {
   return (
-    <Flex
-      bg="primary.100"
-      maxW="100%"
-      minHeight="100vh"
-      justifyContent={"center"}
-      alignItems={"center"}
-    >
-      <Center
-        bg="gray.800"
-        h="100px"
-        color="white"
-        borderWidth="1px"
-        borderRadius="lg"
-        overflow="hidden"
-        padding={5}
-      >
-        Welcome to Crud-beer
-      </Center>
-    </Flex>
+    <Container>
+      <Navbar />
+    </Container>
   );
 }

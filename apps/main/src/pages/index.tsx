@@ -5,16 +5,17 @@ import { Center, Square, Circle } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Flex
-      bg="primary.100"
+      bg="#f8e8b4"
       maxW="100%"
       minHeight="100vh"
       justifyContent={"center"}
       alignItems={"center"}
+      
     >
       <Center
-        bg="gray.800"
+        bg="#cea817"
         h="100px"
-        color="white"
+        color="#190c00"
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"

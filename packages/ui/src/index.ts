@@ -1,5 +1,10 @@
 export * from "./Button/Button";
 export { default as theme } from "./theme";
-export { default as Container } from "./Container/Container";
+export { default as Container } from "./Layout/Container/Container";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as Logo } from "./Logo/Logo";
+export { default as ContainerBody } from "./Layout/ContainerBody/ContainerBody";
+export { default as ProductBox } from "./Layout/ProductBox/ProductBox";
+export { default as ItensCommandBox } from "./Layout/ItensCommandBox/ItensCommandBox";
+export { default as ProductsBox } from "./Layout/ProductsBox/ProductsBox";
+export { default as CommandBox } from "./Layout/CommandBox/CommandBox";

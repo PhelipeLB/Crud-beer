@@ -1084,16 +1084,6 @@
   dependencies:
     vary "^1.1.2"
 
-"@koa/router@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@koa/router/-/router-12.0.0.tgz#2ae7937093fd392761c0e5833c368379d4a35737"
-  integrity sha512-cnnxeKHXlt7XARJptflGURdJaO+ITpNkOHmQu7NHmCoRinPbyvFzce/EG/E8Zy81yQ1W9MoSdtklc3nyaDReUw==
-  dependencies:
-    http-errors "^2.0.0"
-    koa-compose "^4.1.0"
-    methods "^1.1.2"
-    path-to-regexp "^6.2.1"
-
 "@motionone/animation@^10.15.1":
   version "10.15.1"
   resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.15.1.tgz#4a85596c31cbc5100ae8eb8b34c459fb0ccf6807"
@@ -1369,6 +1359,13 @@
     express-graphql "^0.10.0"
     graphql "^15.1.0"
 
+"@types/koa-router@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.4.tgz#db72bde3616365d74f00178d5f243c4fce7da572"
+  integrity sha512-3dHlZ6CkhgcWeF6wafEUvyyqjWYfKmev3vy1PtOmr0mBc3wpXPU5E8fBBd4YQo5bRpHPfmwC5yDaX7s4jhIN6A==
+  dependencies:
+    "@types/koa" "*"
+
 "@types/koa@*", "@types/koa@^2.13.4", "@types/koa@^2.13.5":
   version "2.13.5"
   resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.13.5.tgz#64b3ca4d54e08c0062e89ec666c9f45443b21a61"
@@ -1387,13 +1384,6 @@
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@types/koa__cors/-/koa__cors-3.3.0.tgz#2986b320d3d7ddf05c4e2e472b25a321cb16bd3b"
   integrity sha512-FUN8YxcBakIs+walVe3+HcNP+Bxd0SB8BJHBWkglZ5C1XQWljlKcEFDG/dPiCIqwVCUbc5X0nYDlH62uEhdHMA==
-  dependencies:
-    "@types/koa" "*"
-
-"@types/koa__router@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@types/koa__router/-/koa__router-12.0.0.tgz#19b0f287f9708267dfd8842feb5f2de407d93af2"
-  integrity sha512-S6eHyZyoWCZLNHyy8j0sMW85cPrpByCbGGU2/BO4IzGiI87aHJ92lZh4E9xfsM9DcbCT469/OIqyC0sSJXSIBQ==
   dependencies:
     "@types/koa" "*"
 
@@ -1831,6 +1821,11 @@ color2k@^2.0.0:
   resolved "https://registry.yarnpkg.com/color2k/-/color2k-2.0.1.tgz#bea59670b323265cc13a745f239c6bd6a89d9a89"
   integrity sha512-iCg+xrEqtYISsSJZN1z44fyhv4EfX8lSkcDhodt6VnMf1+iMwZxAtmGXchTCeMUnTbXunGvUVK6E3skkApPnZw==
 
+commander@^2.20.3:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
 compute-scroll-into-view@1.0.14:
   version "1.0.14"
   resolved "https://registry.yarnpkg.com/compute-scroll-into-view/-/compute-scroll-into-view-1.0.14.tgz#80e3ebb25d6aa89f42e533956cb4b16a04cfe759"
@@ -1904,6 +1899,11 @@ css-box-model@1.2.1:
   integrity sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw==
   dependencies:
     tiny-invariant "^1.0.6"
+
+cssfilter@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/cssfilter/-/cssfilter-0.0.10.tgz#c6d2672632a2e5c83e013e6864a42ce8defd20ae"
+  integrity sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==
 
 csstype@^3.0.11, csstype@^3.0.2:
   version "3.1.1"
@@ -2898,6 +2898,20 @@ graphql-helix@^1.13.0:
   resolved "https://registry.yarnpkg.com/graphql-helix/-/graphql-helix-1.13.0.tgz#e64dad5ef5f622ef38c97fa033f56f3d953c0104"
   integrity sha512-cqDKMoRywKjnL0ZWCTB0GOiBgsH6d3nU4JGDF6RuzAyd35tmalzKpSxkx3NNp4H5RvnKWnrukWzR51wUq277ng==
 
+graphql-playground-html@^1.6.30:
+  version "1.6.30"
+  resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.30.tgz#14c2a8eb7fc17bfeb1a746bbb28a11e34bf0b391"
+  integrity sha512-tpCujhsJMva4aqE8ULnF7/l3xw4sNRZcSHu+R00VV+W0mfp+Q20Plvcrp+5UXD+2yS6oyCXncA+zoQJQqhGCEw==
+  dependencies:
+    xss "^1.0.6"
+
+graphql-playground-middleware-koa@^1.6.22:
+  version "1.6.22"
+  resolved "https://registry.yarnpkg.com/graphql-playground-middleware-koa/-/graphql-playground-middleware-koa-1.6.22.tgz#23937dd4dd73ae4c4cb8599b904b5ba59b4a2c3d"
+  integrity sha512-soVUM76ecq5GHk12H69Ce7afzbYuWWc73oKMOcEkmtAn/G9NUdsNvLjLdCnHQX1V0cOUeSbmcYcrebyBOIYGMQ==
+  dependencies:
+    graphql-playground-html "^1.6.30"
+
 graphql@^15.1.0:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
@@ -3357,6 +3371,16 @@ koa-mount@^4.0.0:
   dependencies:
     debug "^4.0.1"
     koa-compose "^4.1.0"
+
+koa-router@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/koa-router/-/koa-router-12.0.0.tgz#94276df8c7aef424b86728b0ff4a69de50050dbc"
+  integrity sha512-zGrdiXygGYW8WvrzeGsHZvKnHs4DzyGoqJ9a8iHlRkiwuEAOAPyI27//OlhoWdgFAEIM3qbUgr0KCuRaP/TCag==
+  dependencies:
+    http-errors "^2.0.0"
+    koa-compose "^4.1.0"
+    methods "^1.1.2"
+    path-to-regexp "^6.2.1"
 
 koa@^2.14.1:
   version "2.14.1"
@@ -4407,6 +4431,14 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
+
+xss@^1.0.6:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/xss/-/xss-1.0.14.tgz#4f3efbde75ad0d82e9921cc3c95e6590dd336694"
+  integrity sha512-og7TEJhXvn1a7kzZGQ7ETjdQVS2UfZyTlsEdDOqvQF7GoxNfY+0YLCzBy1kPdsDDx4QuNAonQPddpsn6Xl/7sw==
+  dependencies:
+    commander "^2.20.3"
+    cssfilter "0.0.10"
 
 yallist@^4.0.0:
   version "4.0.0"

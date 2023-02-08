@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 
-export default function Container({ children }: any) {
+const Container = ({ children }: any) => {
   return (
     <Flex
       bg="primary.100"
@@ -22,4 +22,5 @@ export default function Container({ children }: any) {
       </Box>
     </Flex>
   );
-}
+};
+export default Container;

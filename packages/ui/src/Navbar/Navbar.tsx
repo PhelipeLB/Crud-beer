@@ -34,7 +34,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
   </Link>
 );
 
-export default function Navbar() {
+const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -89,4 +89,5 @@ export default function Navbar() {
       </Box>
     </>
   );
-}
+};
+export default Navbar;

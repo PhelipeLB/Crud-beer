@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-export default function ProductsBox() {
+const ProductsBox = () => {
   return (
     <Box
       bg="gray.800"
@@ -12,4 +12,5 @@ export default function ProductsBox() {
       borderColor={"gray.200"}
     ></Box>
   );
-}
+};
+export default ProductsBox;

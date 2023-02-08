@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { ItensCommandBox } from "@crud-beer/ui";
 import { ProductsBox } from "@crud-beer/ui";
 
-export default function ProductBox() {
+const ProductBox = () => {
   return (
     <Box
       bg="gray.800"
@@ -17,4 +17,5 @@ export default function ProductBox() {
       <ItensCommandBox></ItensCommandBox>
     </Box>
   );
-}
+};
+export default ProductBox;

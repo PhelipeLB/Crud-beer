@@ -1,36 +1,35 @@
 import {
   getGraphQLParameters,
   processRequest,
-  renderGraphiQL,
-  shouldRenderGraphiQL,
-  sendResult
+  sendResult,
 } from "graphql-helix";
 
 import Koa from "koa";
-import cors from '@koa/cors'
-import bodyParser from 'koa-bodyparser'
+import cors from "@koa/cors";
+import bodyParser from "koa-bodyparser";
+import router from "./router";
+
 import { schema } from "./src/graphql/schema";
 
 const app = new Koa();
 
-app.use(bodyParser())
-app.use(cors())
+app.use(bodyParser());
+app.use(cors());
 
-export default app.use(async ctx => {
-
+router.all("/graphql", async (ctx, next) => {
   const { request } = ctx;
-
-  if (shouldRenderGraphiQL(request)) {
-    ctx.body = renderGraphiQL({});
-    return;
-  } 
-    const { operationName, query, variables } = getGraphQLParameters(request);
-    const result = await processRequest({
-      operationName,
-      query,
-      variables,
-      request,
-      schema,
-    });
-    sendResult(result, ctx.res);
+  const { operationName, query, variables } = getGraphQLParameters(request);
+  const result = await processRequest({
+    operationName,
+    query,
+    variables,
+    request,
+    schema,
+  });
+  sendResult(result, ctx.res);
 });
+
+app.use(router.routes());
+app.use(router.allowedMethods());
+
+export default app;

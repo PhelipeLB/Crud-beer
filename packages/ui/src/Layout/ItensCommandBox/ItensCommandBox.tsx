@@ -8,8 +8,9 @@ const ItensCommandBox = () => {
       width="100%"
       color="white"
       overflow="hidden"
-      border={"1px"}
-      borderColor={"gray.200"}
+      border="1px"
+      borderColor="gray.200"
+      borderBottomRightRadius="lg"
     ></Box>
   );
 };

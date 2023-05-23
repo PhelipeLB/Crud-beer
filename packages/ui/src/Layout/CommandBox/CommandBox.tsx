@@ -8,8 +8,9 @@ const CommandBox = () => {
       width="40%"
       color="white"
       overflow="hidden"
-      border={"1px"}
-      borderColor={"gray.200"}
+      border="1px"
+      borderColor="gray.200"
+      borderBottomLeftRadius="lg"
     ></Box>
   );
 };

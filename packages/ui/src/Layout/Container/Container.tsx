@@ -1,10 +1,13 @@
 import { Box, Flex } from "@chakra-ui/react";
+import { ReactNode } from "react";
+interface IContainer {
+  (props: { children: ReactNode }): JSX.Element;
+}
 
-const Container = ({ children }: any) => {
+const Container: IContainer = ({ children }) => {
   return (
     <Flex
       bg="primary.100"
-      maxW="100%"
       minHeight="100vh"
       justifyContent={"center"}
       alignItems={"center"}
@@ -13,8 +16,6 @@ const Container = ({ children }: any) => {
         bg="gray.800"
         minH="500px"
         minW="70%"
-        color="white"
-        borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
       >
